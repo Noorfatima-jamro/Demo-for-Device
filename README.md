@@ -1,0 +1,1 @@
+The Kidney-Mimicking Device demo aims to provide insight into the future of renal care and how technology can significantly improve the lives of patients with kidney failure. Your feedback and questions are essential as we continue to develop and refine this innovative solution.
