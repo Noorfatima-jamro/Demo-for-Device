@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kidney Function Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+    .status {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Kidney Function Simulation</h1>
+    <p>Simulating kidney blood filtration.</p>
+    <button class="button" onclick="startFiltration()">Start Filtration</button>
+    <div class="status" id="status"></div>
+  </div>
+
+  <script>
+    function startFiltration() {
+      document.getElementById('status').innerHTML = 'Blood filtration in progress...';
+      setTimeout(() => {
+        document.getElementById('status').innerHTML = 'Filtration Complete. Blood Cleaned!';
+      }, 3000); // Simulate a 3-second filtration process
+    }
+  </script>
+</body>
+</html>
